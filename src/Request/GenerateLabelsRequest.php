@@ -56,6 +56,12 @@ class GenerateLabelsRequest
     {
         return new static([], [], $waybills);
     }
+    
+    public function setPageSize($pageSize)
+    {
+        $this->pageSize = $pageSize;
+        return $this;
+    }
 
     /**
      * @return GenerateSpedLabelsV1Request
